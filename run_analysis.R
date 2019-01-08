@@ -3,14 +3,14 @@ library(reshape2)
 
 
 #load test data
-read.table("../UCI HAR Dataset/test/X_test.txt",nrows=-10)->testdata
-read.table("../UCI HAR Dataset/test/subject_test.txt",nrows=-10)->testsubject
-read.table("../UCI HAR Dataset/test/y_test.txt",nrows=-10)->testy
+read.table("../UCI HAR Dataset/test/X_test.txt")->testdata
+read.table("../UCI HAR Dataset/test/subject_test.txt")->testsubject
+read.table("../UCI HAR Dataset/test/y_test.txt")->testy
 
 #load train data
-read.table("../UCI HAR Dataset/train/X_train.txt",nrows=-10)->traindata
-read.table("../UCI HAR Dataset/train/subject_train.txt",nrows=-10)->trainsubject
-read.table("../UCI HAR Dataset/train/y_train.txt",nrows=-10)->trainy
+read.table("../UCI HAR Dataset/train/X_train.txt")->traindata
+read.table("../UCI HAR Dataset/train/subject_train.txt")->trainsubject
+read.table("../UCI HAR Dataset/train/y_train.txt")->trainy
 
 #load names
 read.table("../UCI HAR Dataset/features.txt")->featurenames
